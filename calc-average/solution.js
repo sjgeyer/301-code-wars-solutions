@@ -1,0 +1,1 @@
+avg=a=>a.reduce((b,c)=>b+c)/a.length;
