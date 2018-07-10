@@ -1,0 +1,1 @@
+p=()=>{s=v='',l=10,r=[],i=0;while(i<l){s+=i;r[i]=r[l+l-1-1-i]=s+v;i++;v=i-1+v;}return r.join('\n')};
