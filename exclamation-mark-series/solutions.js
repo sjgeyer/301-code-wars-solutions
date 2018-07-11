@@ -77,3 +77,23 @@ function removeOrAdd(s){
   });
   return s.join(' ');
 }
+
+//------------------------------------
+// #10
+//------------------------------------
+function remove10(s){
+  const words = s.split(' ');
+  words.forEach((word, i) => {
+    const coreWord = word.replace(/!/g, '');
+    let front = word.match(/^!+/);
+    front ? front = front[0] : front = '';
+    let back = word.match(/!+$/);
+    back ? back = back[0] : back = '';
+    while (front !== back) {
+      if (front.length > back.length) front = front.substring(1);
+      else back = back.substring(1);
+    }
+    words[i] = front + coreWord + back;
+  });
+  return words.join(' ');
+}

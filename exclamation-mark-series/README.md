@@ -129,3 +129,18 @@ Remove or add a exclamation mark at the end of words of the sentence. Words are 
     removeOrAdd("Hi!") === "Hi"
     removeOrAdd("Hi! Hi") === "Hi Hi!"
     removeOrAdd("Hi! Hi Hi!!") === "Hi Hi! Hi!!"
+
+# 10
+#### Link:
+https://www.codewars.com/kata/57fb04649610ce369a0006b8
+
+#### Problem Domain:
+Description:
+Remove some exclamation marks to keep the same number of exclamation marks at the beginning and end of each word. Words are separated by spaces in the sentence. Please note: only can remove, can not append.
+
+#### Examples
+
+    remove("Hi!") === "Hi"
+    remove("!Hi! Hi!") === "!Hi! Hi"
+    remove("!!Hi! !Hi!!") === "!Hi! !Hi!"
+    remove("!!!!Hi!! !!!!Hi !Hi!!!") === "!!Hi!! Hi !Hi!"
