@@ -97,3 +97,10 @@ function remove10(s){
   });
   return words.join(' ');
 }
+
+//------------------------------------
+// #11
+//------------------------------------
+function replace(s){
+  return s.replace(/[aeiou]/gi, '!');
+}
