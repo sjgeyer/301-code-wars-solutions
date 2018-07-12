@@ -176,3 +176,18 @@ Remove odd number continuous exclamation marks and question marks(from the left 
     remove("!!!???") === ""
     remove("!???!!") === ""         ("!???!!" --> "!!!" --> "")
     remove("!????!!!?") === "!"     ("!????!!!?" --> "!?????" --> "!")
+
+# 13
+#### Link:
+https://www.codewars.com/kata/57fb142297e0860073000064
+
+#### Problem Domain:
+Description:
+Count the number of exclamation marks and question marks, return the product.
+
+#### Examples:
+
+    product("") == 0
+    product("!ab? ?") == 2
+    product("!!") == 0
+    product("!????!!!?") == 20
