@@ -127,3 +127,12 @@ function remove12(s){
   };
   return removeConsecutive(s);
 }
+
+//------------------------------------
+// #13
+//------------------------------------
+function product(s){
+  const bangs = s.match(/!/g) ? s.match(/!/g).join('').length : 0;
+  const quest = s.match(/\?/g) ? s.match(/\?/g).join('').length : 0;
+  return bangs * quest;
+}
