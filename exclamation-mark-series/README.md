@@ -153,9 +153,26 @@ https://www.codewars.com/kata/57fb09ef2b5314a8a90001ed
 Description:
 Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
 
-#### Examples
+#### Examples:
 
     replace("Hi!") === "H!!"
     replace("!Hi! Hi!") === "!H!! H!!"
     replace("aeiou") === "!!!!!"
     replace("ABCDE") === "!BCD!"
+    
+# 12
+#### Link:
+https://www.codewars.com/kata/57fb0f3f9610ced69000023c
+
+#### Problem Domain:
+Remove odd number continuous exclamation marks and question marks(from the left to the right), until no continuous exclamation marks and question marks exist. Please note: One exclamation mark or question mark is not a continuous exclamation marks or question marks. The string only contains ! and ?.
+
+#### Examples:
+
+    remove("") === ""
+    remove("!") === "!"
+    remove("!!") === "!!"
+    remove("!!!") === ""
+    remove("!!!???") === ""
+    remove("!???!!") === ""         ("!???!!" --> "!!!" --> "")
+    remove("!????!!!?") === "!"     ("!????!!!?" --> "!?????" --> "!")

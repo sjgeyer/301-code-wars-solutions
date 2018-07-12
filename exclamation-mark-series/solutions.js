@@ -104,3 +104,26 @@ function remove10(s){
 function replace(s){
   return s.replace(/[aeiou]/gi, '!');
 }
+
+//------------------------------------
+// #12
+//------------------------------------
+function remove12(s){
+  const removeConsecutive = (input) => {
+    const allPunc = input.match(/!+|\?+/g);
+    if (allPunc) {
+      allPunc.forEach((group,i) => {
+        if((group.length !== 1) && (group.length % 2 !== 0)) {
+          allPunc[i] = '';
+        }
+      });
+      let tempString = allPunc.join('');
+      if (tempString!== input) {
+        tempString = removeConsecutive(tempString);
+      }
+      return tempString;
+    }
+    return input;
+  };
+  return removeConsecutive(s);
+}
