@@ -14,6 +14,20 @@ function totalLicks(env) {
 }
 
 // -----------------------------------------------
+// #2 - Help ALF find his spaceship
+// -----------------------------------------------
+function findSpaceship(map) {
+  if (!map) return 'Spaceship lost forever.';
+  const split = map.split('\n').reverse();
+  for (let i = 0; i < split.length; i++) {
+    for (let j = 0; j < split[i].length; j++) {
+      if (split[i][j] === 'X') return [j, i];
+    }
+  }
+  return 'Spaceship lost forever.';
+}
+
+// -----------------------------------------------
 // #6 - Rock 'em Sock 'em Robots
 // -----------------------------------------------
 function fight(robot1, robot2, tactics) {

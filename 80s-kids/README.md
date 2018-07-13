@@ -24,6 +24,36 @@ Other cases: If there are no challenges, the toughest challenge sentence should 
     "It took 260 licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was freezing temps."
 
 
+## 80's Kids #2: Help ALF find his spaceship
+
+#### Link:
+http://www.codewars.com/kata/5660aa3d5e011dfd6e000063
+
+#### Problem Domain:
+Late last night in the Tanner household, ALF was repairing his spaceship so he might get back to Melmac. Unfortunately for him, he forgot to put on the parking brake, and the spaceship took off during repair. Now it's hovering in space.
+
+ALF has the technology to bring the spaceship home if he can lock on to it's location.
+
+The map will be given in the form of a string with `\n` separating new lines. The bottom left of the map is `[0, 0]`. X is ALF's spaceship.
+
+#### Example:
+
+Given a map:
+
+    ..........
+    ..........
+    ..........
+    .......X..
+    ..........
+    ..........
+
+    findSpaceship(map) => [7, 2]
+If you cannot find the spaceship, the result should be
+
+    "Spaceship lost forever."
+
+Can you help ALF?
+
 ## 80's Kids #6: Rock 'Em, Sock 'Em Robots
 
 #### Link:
