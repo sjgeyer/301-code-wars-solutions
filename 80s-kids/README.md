@@ -54,6 +54,24 @@ If you cannot find the spaceship, the result should be
 
 Can you help ALF?
 
+## 80's Kids #3: Punky Brewster's Socks
+
+#### Link:
+http://www.codewars.com/kata/5662292ee7e2da24e900012f
+
+#### Problem Domain:
+Punky loves wearing different colored socks, but Henry can't stand it.
+
+Given an array of different colored socks, return a pair depending on who was picking them out.
+
+#### Examples:
+
+    getSocks('Punky', ['red','blue','blue','green']) //=> ['red', 'blue']
+    getSocks('Henry', ['red','blue','blue','green']) //=> ['blue', 'blue']
+
+Note that Punky can have any two colored socks, in any order, as long as they are different and both exist. Henry always picks a matching pair.
+
+
 ## 80's Kids #6: Rock 'Em, Sock 'Em Robots
 
 #### Link:

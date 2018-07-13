@@ -28,6 +28,50 @@ function findSpaceship(map) {
 }
 
 // -----------------------------------------------
+// #3 - Punky Brewster's Socks
+// -----------------------------------------------
+function getSocks(name, socks) {
+  const sockPair = [socks[0]];
+  let currentSockIndex = 1;
+  const addSock = () => {
+    if (name === 'Punky') {
+      for (let i = currentSockIndex; i < socks.length; i++) {
+        if (socks[i] !== sockPair[0]) {
+          sockPair.push(socks[i]);
+          break;
+        }
+      }
+    } else {
+      for (let i = currentSockIndex; i < socks.length; i++) {
+        if (socks[i] === sockPair[0]) {
+          sockPair.push(socks[i]);
+          break;
+        }
+      }
+    }
+  };
+  while (sockPair.length < 2 && currentSockIndex < socks.length) {
+    addSock();
+    if(sockPair.length < 2) sockPair[0] = socks[currentSockIndex];
+    currentSockIndex++;
+  }
+  if (sockPair.length < 2) {
+    return [];
+  }
+  return sockPair;
+}
+
+// -----------------------------------------------
+// #4 -
+// -----------------------------------------------
+
+
+// -----------------------------------------------
+// #5 -
+// -----------------------------------------------
+
+
+// -----------------------------------------------
 // #6 - Rock 'em Sock 'em Robots
 // -----------------------------------------------
 function fight(robot1, robot2, tactics) {
