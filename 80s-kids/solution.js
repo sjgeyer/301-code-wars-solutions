@@ -1,7 +1,20 @@
-
+// -----------------------------------------------
+// #1 - How many Licks Does it Take?
+// -----------------------------------------------
+function totalLicks(env) {
+  let baseLicks = 252;
+  const envVariables = Object.keys(env).sort((a, b) => env[b] - env[a]);
+  envVariables.forEach(condition => {
+    baseLicks = baseLicks + env[condition];
+  });
+  if (env[envVariables[0]] > 0) {
+    return `It took ${baseLicks} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was ${envVariables[0]}.`;
+  }
+  return `It took ${baseLicks} licks to get to the tootsie roll center of a tootsie pop.`;
+}
 
 // -----------------------------------------------
-// #6
+// #6 - Rock 'em Sock 'em Robots
 // -----------------------------------------------
 function fight(robot1, robot2, tactics) {
   let player1, player2;
