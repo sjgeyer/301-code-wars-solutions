@@ -125,3 +125,33 @@ function fight(robot1, robot2, tactics) {
   }
   return `${player2.name} has won the fight.`;
 }
+
+// -----------------------------------------------
+// #7 - She's a Small Wonder
+// -----------------------------------------------
+function Robot() {
+  this.wordsKnown = {
+    thank: true,
+    you: true,
+    for: true,
+    teaching: true,
+    me: true,
+    i: true,
+    already: true,
+    know: true,
+    the: true,
+    word: true,
+    do: true,
+    not: true,
+    understand: true,
+    input: true,
+  };
+}
+
+Robot.prototype.learnWord = function(word) {
+  let tempWord = word.toLowerCase();
+  if (/\W|\d/.test(word) || !word) return 'I do not understand the input';
+  if (this.wordsKnown[tempWord]) return `I already know the word ${word}`;
+  this.wordsKnown[tempWord] = true;
+  return `Thank you for teaching me ${word}`;
+};
