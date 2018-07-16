@@ -83,9 +83,16 @@ function markSpot(n) {
 }
 
 // -----------------------------------------------
-// #5 -
+// #5 - You Can't Do That on Television
 // -----------------------------------------------
-
+function bucketOf(str) {
+  const water = /water|wet|wash/.test(str.toLowerCase());
+  const slime = /slime|i don't know/.test(str.toLowerCase());
+  if (water && slime) return 'sludge';
+  if (water) return 'water';
+  if (slime) return 'slime';
+  return 'air';
+}
 
 // -----------------------------------------------
 // #6 - Rock 'em Sock 'em Robots
