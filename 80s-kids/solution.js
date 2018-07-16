@@ -64,7 +64,23 @@ function getSocks(name, socks) {
 // -----------------------------------------------
 // #4 -
 // -----------------------------------------------
-
+function markSpot(n) {
+  if (n === 1) return 'X\n';
+  if (n%2 === 0 || typeof n !== 'number' || n < 0) return '?';
+  const x = Array(n).fill(0);
+  const lineLength = n * 2 - 3;
+  const mid = Math.ceil(x.length / 2);
+  for (let i = 0; i < mid; i++) {
+    let middle = lineLength - (4 * i);
+    middle = middle < 0 ? 0 : middle;
+    if (i === mid - 1) {
+      x[i] = x[n - i - 1] = `${' '.repeat(i * 2)}X\n`
+    } else {
+      x[i] = x[n - i - 1] = `${' '.repeat(i * 2)}X${' '.repeat(middle)}X\n`
+    }
+  }
+  return x.join('');
+}
 
 // -----------------------------------------------
 // #5 -

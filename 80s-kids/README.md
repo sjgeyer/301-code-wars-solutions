@@ -72,6 +72,71 @@ Given an array of different colored socks, return a pair depending on who was pi
 Note that Punky can have any two colored socks, in any order, as long as they are different and both exist. Henry always picks a matching pair.
 
 
+## 80's Kids #4: Legends of the Hidden Temple
+
+#### Link:
+http://www.codewars.com/kata/80-s-kids-number-4-legends-of-the-hidden-temple
+
+#### Problem Domain:
+You've made it through the moat and up the steps of knowledge. You've won the temples games and now you're hunting for treasure in the final temple run. There's good news and bad news. You've found the treasure but you've triggered a nasty trap. You'll surely perish in the temple chamber.
+
+With your last movements, you've decided to draw an "X" marks the spot for the next archaeologist.
+
+Given an odd number, `n`, draw an X for the next crew. Follow the example below.
+
+#### Examples:
+
+    markSpot(5) ->
+    
+    X       X
+      X   X
+        X
+      X   X
+    X       X
+
+For a clearer understanding of the output, let `.` represent a space and `\n` the newline.
+
+    X.......X\n
+    ..X...X\n
+    ....X\n
+    ..X...X\n
+    X.......X\n
+
+    markSpot(3) ->
+    
+    X   X
+      X
+    X   X
+
+
+If `n = 1` return `X\n` and if you're given an even number or invalid input, return `'?'`.
+
+The output should be a string with no spaces after the final X on each line, but a `\n` to indicate a new line.
+
+
+## 80's Kids #5: You Can't Do That on Television
+
+#### Link:
+http://www.codewars.com/kata/80-s-kids-number-5-you-cant-do-that-on-television
+
+#### Problem Domain:
+There are just some things you can't do on television. In this case, you've just come back from having a "delicious" Barth burger and you're set to give an interview. The Barth burger has made you queasy, and you've forgotten some of the import rules of the "You Can't Do That on Television" set.
+
+If you say any of the following words a large bucket of "water" will be dumped on you: `"water"`, `"wet"`, `"wash"` This is true for any form of those words, like `"washing"`, `"watered"`, etc.
+
+If you say any of the following phrases you will be doused in "slime": `"I don't know"`, `"slime"`
+
+If you say both in one sentence, a combination of water and slime, `"sludge"`, will be dumped on you.
+
+Write a function, `bucketOf(str)`, that takes a string and determines what will be dumped on your head. If you haven't said anything you shouldn't have, the bucket should be filled with `"air"`. The words should be tested regardless of case.
+
+#### Examples:
+    
+    bucketOf("What is that, WATER?!?") -> "water"
+    bucketOf("I don't know if I'm doing this right.") -> "slime"
+    bucketOf("You won't get me!") -> "air"
+
+
 ## 80's Kids #6: Rock 'Em, Sock 'Em Robots
 
 #### Link:
