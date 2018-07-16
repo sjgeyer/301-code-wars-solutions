@@ -155,3 +155,10 @@ Robot.prototype.learnWord = function(word) {
   this.wordsKnown[tempWord] = true;
   return `Thank you for teaching me ${word}`;
 };
+
+
+// -----------------------------------------------
+// #8 - The Secret World of Alex Mack
+// -----------------------------------------------
+badge = Math.badge;
+// badge = new Date().getTime() / 3;
